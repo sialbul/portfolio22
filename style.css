@@ -221,7 +221,7 @@ section {
     /* Animation */
 }
 
-.circle:hover {
+.circle :hover {
     transform: scale(2);
 }
 
@@ -374,6 +374,9 @@ main {
     margin: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.containerOver {
     position: relative;
 }
 
@@ -389,11 +392,11 @@ main {
     -ms-transform: translate(-50%, -50%);
 }
 
-.container:hover .portfolioImg {
+.containerOver:hover .portfolioImg {
     opacity: 0.3;
 }
 
-.container:hover .overlay {
+.containerOver:hover .overlay {
     opacity: 1;
 }
 

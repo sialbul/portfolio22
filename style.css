@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: white;
+    background-color: #173e43;
     /* background-image: linear-gradient(to right, #008000, #32910e, #50a21c, #6bb328, #85c434, #7fba38, #79b13c, #74a73f, #538138, #395c2e, #233921, #121912); */
-    cursor: default;
+    cursor: none;
 }
 
 header {
@@ -15,6 +15,7 @@ header {
     top: 0px;
     background-color: white;
     cursor: none;
+    z-index: 99;
 }
 
 nav {
@@ -50,7 +51,7 @@ nav {
 }
 
 .nav-links a {
-    color: black;
+    color: #173e43;
     text-decoration: none;
     letter-spacing: 3px;
 }
@@ -173,8 +174,7 @@ h1 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
-/* .newcursor {
+.newcursor {
     width: 2rem;
     height: 2rem;
     border: 2px solid black;
@@ -185,9 +185,9 @@ h1 {
     transition: all 0.3s ease;
     transition-property: background, transform;
     transform-origin: 100% 100%;
-    z-index: 3;
+    z-index: 100;
     background-color: transparent;
-} */
+}
 
 .link-grow {
     transform: scale(2);
@@ -210,10 +210,10 @@ section {
 }
 
 .circle {
-    width: 80vh;
-    height: 80vh;
-    background-color: rgba(231, 15, 7, 0.438);
-    border-radius: 20px;
+    width: 90vh;
+    height: 90vh;
+    background-color: #fae596;
+    border-radius: 360px;
     position: relative;
     align-items: center;
     margin-left: 2%;
@@ -229,24 +229,24 @@ section {
     z-index: 3;
     font-family: 'Tangerine', cursive;
     letter-spacing: 3px;
-    width: 40%;
+    width: 35%;
     text-align: center;
     align-items: center;
-    line-height: 5vh;
+    line-height: 4vh;
     /* flex: 1; */
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    margin: 0 30px;
+    margin-left: 7%;
     padding: 10px;
     animation: reveal 3s ease-in-out forwards;
     position: absolute;
     left: 0px;
-    color: white;
+    color: #3fb0ac;
 }
 
 .photoanimation {
-    height: 70vh;
-    width: 70vh;
+    height: 60vh;
+    width: 60vh;
     position: relative;
     margin: 0 auto;
     /* flex: 1; */
@@ -301,7 +301,7 @@ section {
 
 main {
     position: relative;
-    z-index: -3;
+    /* z-index: -3; */
 }
 
 .bubble {
@@ -342,42 +342,30 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
-    width: 100%;
+    width: 90%;
     align-items: center;
     margin: 0;
-    /* position: relative; */
+    position: relative;
 }
 
 .circle2 {
-    width: 70%;
-    height: 100vh;
-    background-color: rgba(231, 15, 7, 0.438);
-    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    background-color: #3fb0ac62;
+    border-radius: 360px;
     position: absolute;
-    margin: 0px 10%;
-    text-align: center;
-    align-items: center;
+    margin: 0 20%;
 }
 
 .circle2 h1 {
     margin-top: 30%;
-    font-size: 150px;
-    color: rgba(0, 0, 0, 0.199);
-}
-
-.portfolioImg {
-    width: 100%;
-    height: 100%;
-    object-fit: fit;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    font-size: 140px;
+    color: #fae4967a;
 }
 
 .container {
-    width: 300px;
-    height: 250px;
+    width: 90%;
+    height: 100%;
     border: 1px solid white;
     border-radius: 2%;
     margin: 30px;
@@ -386,31 +374,45 @@ main {
 }
 
 .containerOver {
+    width: 100%;
+    height: 100%;
     position: relative;
+    align-items: center;
+}
+
+.portfolioImg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block;
+    border-radius: 2%;
 }
 
 .overlay {
-    position: absolute;
     transition: .5s ease;
     opacity: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
 }
 
 .containerOver:hover .portfolioImg {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .containerOver:hover .overlay {
     opacity: 1;
+    background-color: rgba(255, 255, 255, 0.432);
 }
 
-.text {
+.containerOver .text {
     color: black;
     font-size: 18px;
-    height: 100%;
 }

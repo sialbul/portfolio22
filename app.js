@@ -26,35 +26,35 @@ const navSlide = () => {
 navSlide();
 
 
-// //animated mouse
-// let mouseCursor = document.querySelector('.newcursor');
-// let navLinks = document.querySelectorAll('.nav-links li');
-// let containers = document.querySelectorAll('.photoanimation img');
+//animated mouse
+let mouseCursor = document.querySelector('.newcursor');
+let navLinks = document.querySelectorAll('.nav-links li');
+let containers = document.querySelectorAll('.photoanimation img');
 
-// window.addEventListener('mousemove', cursor);
+window.addEventListener('mousemove', cursor);
 
-// function cursor(e) {
-//     mouseCursor.style.top = e.pageY + "px";
-//     mouseCursor.style.left = e.pageX + "px";
-// }
+function cursor(e) {
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
+}
 
-// navLinks.forEach(link => {
-//     link.addEventListener('mouseleave', () => {
-//         mouseCursor.classList.remove('link-grow');
-//     });
-//     link.addEventListener('mouseover', () => {
-//         mouseCursor.classList.add('link-grow');
-//     });
-// });
+navLinks.forEach(link => {
+    link.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('link-grow');
+    });
+    link.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('link-grow');
+    });
+});
 
-// containers.forEach(img => {
-//     img.addEventListener('mouseleave', () => {
-//         mouseCursor.classList.remove('link-grow');
-//     });
-//     img.addEventListener('mouseleave', () => {
-//         mouseCursor.classList.add('link-grow');
-//     })
-// })
+containers.forEach(img => {
+    img.addEventListener('mouseleave', () => {
+        mouseCursor.classList.remove('link-grow');
+    });
+    img.addEventListener('mouseover', () => {
+        mouseCursor.classList.add('link-grow');
+    })
+})
 
 
 //animated navbar

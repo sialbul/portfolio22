@@ -210,10 +210,9 @@ section {
 }
 
 .circle {
-    width: 90vh;
-    height: 90vh;
+    width: 45%;
     background-color: #ffd33a;
-    border-radius: 360px;
+    border-radius: 50%;
     position: relative;
     align-items: center;
     margin-left: 2%;
@@ -350,9 +349,8 @@ main {
 
 .circle2 {
     width: 50%;
-    height: 100%;
     background-color: #a3cf4d;
-    border-radius: 360px;
+    border-radius: 50%;
     position: absolute;
     margin: 0 20%;
 }
@@ -495,39 +493,28 @@ a {
     }
 }
 
-.contact {
-    grid: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 100%;
-    height: 90vh;
-}
-
 #circle3 {
-    justify-content: center;
-    width: 50vh;
-    height: 50vh;
+    width: 20%;
     background-color: #a3cf4d;
-    border-radius: 360px;
+    border-radius: 50%;
     margin: auto;
     transition: transform .2s;
-    align-items: center;
     text-align: center;
 }
 
 #circle3 h1 {
     font-size: 38px;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 130px;
+    position: absolute;
+    top: 36%;
+    left: 25%;
 }
 
 #circle4 {
-    justify-content: center;
-    width: 10vh;
-    height: 10vh;
+    width: 5%;
     top: 5%;
     background-color: #261c52;
-    border-radius: 360px;
+    border-radius: 50%;
     margin: auto;
     text-align: center;
     transition: transform .2s;
@@ -537,17 +524,73 @@ a {
     color: white;
     font-size: 40px;
     text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 26%;
 }
 
 #circle5 {
-    width: 25vh;
-    height: 25vh;
-    background-color: #ffd33a;
-    border-radius: 360px;
+    width: 14%;
+    background-color: #a3cf4d;
+    border-radius: 50%;
     margin: auto;
     align-items: center;
     text-align: center;
     transition: transform .2s;
 }
 
-#circle5 a {}
+#circle5 a {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+}
+
+#circle6 {
+    width: 10%;
+    background-color: #ffd33a;
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    transition: transform .2s;
+}
+
+#circle6 a {
+    position: absolute;
+}
+
+.circle::after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+.circle2::after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+#circle3::after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+#circle4::after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+#circle5::after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+#circle6 ::after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}

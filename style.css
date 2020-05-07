@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #173e43;
+    background-color: #f3f1e9;
     /* background-image: linear-gradient(to right, #008000, #32910e, #50a21c, #6bb328, #85c434, #7fba38, #79b13c, #74a73f, #538138, #395c2e, #233921, #121912); */
     cursor: none;
 }
@@ -33,7 +33,7 @@ nav {
 }
 
 .logo {
-    color: black;
+    color: #261c52;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-links a {
-    color: #173e43;
+    color: #261c52;
     text-decoration: none;
     letter-spacing: 3px;
 }
@@ -212,7 +212,7 @@ section {
 .circle {
     width: 90vh;
     height: 90vh;
-    background-color: #fae596;
+    background-color: #ffd33a;
     border-radius: 360px;
     position: relative;
     align-items: center;
@@ -241,7 +241,7 @@ section {
     animation: reveal 3s ease-in-out forwards;
     position: absolute;
     left: 0px;
-    color: #3fb0ac;
+    color: #261c52;
 }
 
 .photoanimation {
@@ -250,7 +250,7 @@ section {
     position: relative;
     margin: 0 auto;
     /* flex: 1; */
-    border: 1px solid rgba(10, 9, 9, 0.438);
+    border: 3px solid #a3cf4d;
     border-radius: 50%;
     z-index: 5;
 }
@@ -351,7 +351,7 @@ main {
 .circle2 {
     width: 50%;
     height: 100%;
-    background-color: #3fb0ac62;
+    background-color: #a3cf4d;
     border-radius: 360px;
     position: absolute;
     margin: 0 20%;
@@ -396,8 +396,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
     transform: translate(-50%, -50%);
     text-align: center;
     align-items: center;
@@ -409,10 +408,146 @@ main {
 
 .containerOver:hover .overlay {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.432);
 }
 
 .containerOver .text {
     color: black;
     font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    line-height: initial;
 }
+
+a {
+    /* or whatever your class */
+    text-decoration: none;
+}
+
+#leftArm {
+    animation: leftArm 1s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes leftArm {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(1.6%);
+    }
+}
+
+#rightArm {
+    animation: rightArm 2s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes rightArm {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(2%);
+    }
+}
+
+#leftHair {
+    animation: hair 2s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+#rightHair {
+    animation: hairR 2s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes hair {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-0.8%);
+    }
+}
+
+@keyframes hairR {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-0.2%);
+    }
+}
+
+#ground {
+    animation: ground 3s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes ground {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(45deg);
+    }
+}
+
+.contact {
+    grid: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+    height: 90vh;
+}
+
+#circle3 {
+    justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    background-color: #a3cf4d;
+    border-radius: 360px;
+    margin: auto;
+    transition: transform .2s;
+    align-items: center;
+    text-align: center;
+}
+
+#circle3 h1 {
+    font-size: 38px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 130px;
+}
+
+#circle4 {
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    top: 5%;
+    background-color: #261c52;
+    border-radius: 360px;
+    margin: auto;
+    text-align: center;
+    transition: transform .2s;
+}
+
+#circle4 a {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#circle5 {
+    width: 25vh;
+    height: 25vh;
+    background-color: #ffd33a;
+    border-radius: 360px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    transition: transform .2s;
+}
+
+#circle5 a {}

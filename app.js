@@ -61,7 +61,7 @@ containers.forEach(img => {
 
 const sections = document.querySelectorAll('section');
 const bubble = document.querySelector('.bubble');
-const colors = ['green', "green", "green", "green"];
+const colors = ['#a3cf4d', "#a3cf4d", "#a3cf4d", "#a3cf4d"];
 
 const options = {
     threshold: 0.7

@@ -366,7 +366,7 @@ main {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 2em;
     width: 90%;
     align-items: center;

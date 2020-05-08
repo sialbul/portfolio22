@@ -18,10 +18,10 @@
     <header>
         <nav>
             <ul class="nav-links " id="mobileViewAll">
-                <li class="regularViewLi"><a data-page="home" href="# ">Home</a></li>
-                <li class="regularViewLi"><a data-page="projects" href="# ">Projects</a></li>
-                <li class="mobileViewLi"><a href="https://drive.google.com/file/d/1U1966ZM9n2AapkLFe9fkPw8dJQyZeB31/view" target="_blank" download>Resume</a></li>
-                <li class="mobileViewLi"><a href="# ">Contact</a></li>
+                <li class="regularViewLi"><a data-page="home" href="#section1">Home</a></li>
+                <li class="regularViewLi"><a data-page="projects" href="#section2">Projects</a></li>
+                <li class="mobileViewLi"><a href="#section3">Resume</a></li>
+                <li class="mobileViewLi"><a href="#section4">Contact</a></li>
                 <div class="bubble"></div>
             </ul>
             <div>
@@ -32,8 +32,8 @@
                 <div class="divider div-transparent div-arrow-down"></div>
             </div>
             <ul class="nav-links " id="mobileViewNone">
-                <li class="regularViewLi"><a data-page="resume" href="https://drive.google.com/file/d/1U1966ZM9n2AapkLFe9fkPw8dJQyZeB31/view" target="_blank" download>Resume</a></li>
-                <li class="regularViewLi"><a data-page="contact" href="# ">Contact</a></li>
+                <li class="regularViewLi"><a data-page="resume" href="#section3">Resume</a></li>
+                <li class="regularViewLi"><a data-page="contact" href="#section4">Contact</a></li>
                 <div class="bubble"></div>
             </ul>
             <div class="burger">
@@ -44,21 +44,22 @@
         </nav>
     </header>
     <main>
-        <section data-index="0" class="home">
+        <section data-index="0" class="home" id="section1">
             <div class="circle" data-aos="zoom-in-left" data-aos-delay="800" data-aos-easing=" ease-in-sine " data-aos-duration="1000">
-            </div>
-            <div class=" aboutme ">
-                <p class=" aboutMeText ">Web designer, developer and Environmental Engineering graduate with a strong work ethic and enthusiasm for coding.</p>
-                <br>
-                <p class=" aboutMeText ">Graduated from the Case Western Reserve University Full Stack Web Development program.
-                </p>
-                <br>
-                <p class=" aboutMeText ">Brings creativity, problem solving skills and a drive for collaboration to every project. </p>
-                <br>
-                <p class=" aboutMeText "> Specializes in</p>
-                <p class=" typing "></p>
+                <div class=" aboutme ">
+                    <p class=" aboutMeText ">Web designer, developer and Environmental Engineering graduate with a strong work ethic and enthusiasm for coding.</p>
+                    <br>
+                    <p class=" aboutMeText ">Graduated from the Case Western Reserve University Full Stack Web Development program.
+                    </p>
+                    <br>
+                    <p class=" aboutMeText ">Brings creativity, problem solving skills and a drive for collaboration to every project. </p>
+                    <br>
+                    <p class=" aboutMeText "> Specializes in</p>
+                    <p class=" typing "></p>
 
+                </div>
             </div>
+
             <div class=" photoanimation ">
                 <img src=" ./assets/sibel.png " alt=" sibel ">
                 <video autoplay muted loop src=" ./assets/forest.mp4 "></video>
@@ -66,7 +67,7 @@
 
         </section>
         <div style="min-height:30vh"></div>
-        <section data-index="1" class="projects">
+        <section data-index="1" class="projects" id="section2">
             <div class="circle2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             </div>
             <div class="container" data-aos="zoom-in-left" data-aos-delay="200" data-aos-easing="ease-in-out">
@@ -222,8 +223,8 @@
         </section>
         <div style="min-height:5vh"></div>
 
-        <section data-index=" 2 " class=" resume ">
-            <div><a data-page="resume" href="https://drive.google.com/file/d/1U1966ZM9n2AapkLFe9fkPw8dJQyZeB31/view" target="_blank" download><svg width="558" height="557" viewBox="0 0 1058 557" fill="none"
+        <section data-index=" 2 " class=" resume " id="section3">
+            <div><a data-page="resume" href="https://drive.google.com/file/d/1U1966ZM9n2AapkLFe9fkPw8dJQyZeB31/view" target="_blank" download><svg width="558" height="357" viewBox="0 0 1058 557" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="undraw_web_development_w2vv 1">
                             <g clip-path="url(#clip0)">
@@ -388,7 +389,7 @@
         </section>
 
         </section>
-        <section data-index=" 3 " class=" contact ">
+        <section data-index=" 3 " class="contact" id="section4">
             <div id="circle3" data-aos="zoom-in-left" data-aos-easing=" ease-in-sine " data-aos-duration="1000">
                 <h1>Contact</h1>
             </div>
@@ -397,7 +398,7 @@
                     <i id=" githubContact " class=" fa fa-github "></i></a>
             </div>
             <div id="circle6" data-aos="zoom-in-left" data-aos-easing=" ease-in-sine " data-aos-duration="1000">
-                <a href="https://www.linkedin.com/in/sbaslamisli"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/sbaslamisli" title=" Visit linkedin" target="_blank "><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
             <div id="circle5" data-aos="zoom-in-left" data-aos-easing=" ease-in-sine " data-aos-duration="1000">
                 <a href="mailto:sbaslamisli@yahoo.com"><i class=" fa fa-envelope "> sbaslamisli@yahoo.com</i></a>
@@ -406,7 +407,7 @@
         </section>
     </main>
     <script src=" https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-
+    <script src="jquery-3.4.1.min.js"></script>
     <script src=" app.js "></script>
 
 </body>

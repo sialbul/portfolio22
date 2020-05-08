@@ -169,6 +169,12 @@ h1 {
     }
 }
 
+@media screen and (max-width:320px) {
+    #helper {
+        height: 2500vh;
+    }
+}
+
 .nav-active {
     transform: translateX(0%);
 }

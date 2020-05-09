@@ -6,6 +6,7 @@
 
 body {
     background-color: #f3f1e9;
+    /* background-image: linear-gradient(to right, #008000, #32910e, #50a21c, #6bb328, #85c434, #7fba38, #79b13c, #74a73f, #538138, #395c2e, #233921, #121912); */
     cursor: none;
 }
 
@@ -49,8 +50,8 @@ nav {
 }
 
 .nav-links li {
-    padding: 1rem;
     list-style: none;
+    padding: 1rem;
 }
 
 .nav-links a {
@@ -85,7 +86,6 @@ nav {
     height: 2px;
     margin: 5px;
     background-color: black;
-    ;
 }
 
 .mobileViewLi {
@@ -95,86 +95,6 @@ nav {
 .burger {
     display: none;
     cursor: pointer;
-}
-
-@media screen and (max-width:1280px) {
-    #helper {
-        height: 60vh;
-    }
-    .circle {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .nav-links {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    .burger {
-        display: block;
-    }
-    #mobileViewNone {
-        display: none;
-    }
-    .mobileViewLi {
-        display: block;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 72vh;
-        top: 8vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        font-size: 16px;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        background-color: white;
-        align-items: center;
-        z-index: 5;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-    .home {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-    .aboutme {
-        text-align: center;
-        width: 100%;
-        margin: 30px 0px;
-        align-items: center;
-    }
-    .photoanimation {
-        width: 50%;
-    }
-    .circle {
-        margin-top: 20vh;
-    }
-    #helper {
-        height: 250vh;
-    }
-    .bubble {
-        display: none;
-    }
-}
-
-@media screen and (max-width:320px) {
-    #helper {
-        height: 300vh;
-    }
 }
 
 .nav-active {
@@ -272,10 +192,6 @@ section {
     transition: transform .2s;
 }
 
-.circle :hover {
-    transform: scale(2);
-}
-
 .aboutme {
     width: 60%;
     z-index: 3;
@@ -350,12 +266,13 @@ section {
 
 main {
     position: relative;
-    z-index: -3;
+    /* z-index: -3; */
 }
 
 .bubble {
     position: absolute;
     z-index: -2;
+    background-color: blue;
     transform: scale(2);
     transition: all 0.5s ease;
 }
@@ -421,16 +338,6 @@ main {
     color: #fae4967a;
 }
 
-.portfolioImg {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    display: block;
-    border-radius: 2%;
-}
-
 .container {
     width: 80%;
     height: 30vh;
@@ -446,6 +353,16 @@ main {
     height: 100%;
     position: relative;
     align-items: center;
+}
+
+.portfolioImg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block;
+    border-radius: 2%;
 }
 
 .overlay {
@@ -693,3 +610,83 @@ a {
     padding-bottom: 100%;
     display: block;
 }
+
+@media screen and (max-width:1280px) {
+    #helper {
+        height: 60vh;
+    }
+    .circle {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .burger {
+        display: block;
+    }
+    #mobileViewNone {
+        display: none;
+    }
+    .mobileViewLi {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 72vh;
+        top: 8vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: white;
+        align-items: center;
+        z-index: 5;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .home {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .aboutme {
+        text-align: center;
+        width: 100%;
+        margin: 30px 0px;
+        align-items: center;
+    }
+    .photoanimation {
+        width: 50%
+    }
+    .circle {
+        margin-top: 20vh;
+    }
+    #helper {
+        height: 250vh;
+    }
+    #circle5 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #helper {
+        height: 300vh;
+    }
+   }

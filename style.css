@@ -19,8 +19,8 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
-    min-height: 10vh;
+    justify-content: space-between;
+    min-height: 5vh;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     /* z-index: -2; */
@@ -37,7 +37,7 @@ nav {
 .logo {
     color: #261c52;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 .nav-links {
@@ -85,7 +85,7 @@ nav {
     height: 2px;
     margin: 5px;
     background-color: black;
-    ;
+    transition: all 0.3s ease;
 }
 
 .mobileViewLi {
@@ -150,11 +150,11 @@ nav {
         display: block;
         text-align: center;
         width: 100%;
+        align-items: center;
     }
     .aboutme {
         text-align: center;
         width: 100%;
-        margin: 30px 0px;
         align-items: center;
     }
     .photoanimation {
@@ -277,7 +277,7 @@ section {
 }
 
 .aboutme {
-    width: 60%;
+    width: 100%;
     z-index: 3;
     letter-spacing: 3px;
     align-items: center;

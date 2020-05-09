@@ -589,12 +589,6 @@ a {
     display: block;
 }
 
-@media screen and (max-width:1500px) {}
-
-@media screen and (max-width:1330px) {}
-
-@media screen and (max-width:930px) {}
-
 @media screen and (max-width:780px) {
     body {
         overflow-x: hidden;
@@ -654,6 +648,6 @@ a {
 
 @media screen and (max-width:320px) {
     #helper {
-        height: 250vh;
+        height: 300vh;
     }
 }

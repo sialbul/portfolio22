@@ -308,11 +308,21 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     grid-gap: 2em;
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin: 0;
     position: relative;
     height: 100vh;
+}
+
+#githubLeft {
+    font-size: 22px;
+    margin: 5px 3px;
+    color: black;
+}
+
+#githubLeft:hover {
+    color: blue;
 }
 
 .circle2 {

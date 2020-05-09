@@ -589,6 +589,15 @@ a {
     display: block;
 }
 
+@media screen and (max-width:1280px) {
+    #helper {
+        height: 60vh;
+    }
+    .circle {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width:780px) {
     body {
         overflow-x: hidden;

@@ -162,7 +162,8 @@ nav {
         align-items: center;
     }
     .photoanimation {
-        width: 50%;
+        width: 80%;
+        margin-top: 10vh;
     }
     .circle {
         margin-top: 20vh;
@@ -295,7 +296,8 @@ section {
     border: 3px solid #a3cf4d;
     border-radius: 50%;
     z-index: 5;
-    width: 30%;
+    width: 50%;
+    margin-top: 10vh;
 }
 
 .photoanimation::after {

@@ -233,7 +233,8 @@ nav {
     border: 1px solid black;
 }
 
-.nav-links :hover {
+.nav-links :hover,
+.nav-links :active {
     color: red;
     transform: scale(2);
     transition: all 0.2s ease;
@@ -278,10 +279,6 @@ section {
     z-index: -1;
     position: absolute;
     transition: transform .2s;
-}
-
-.circle :hover {
-    transform: scale(2);
 }
 
 .aboutme {
@@ -411,7 +408,8 @@ main {
     color: black;
 }
 
-#githubLeft:hover {
+#githubLeft:hover,
+#githubLeft:active {
     color: blue;
 }
 
@@ -468,11 +466,13 @@ main {
     align-items: center;
 }
 
-.containerOver:hover .portfolioImg {
+.containerOver:hover .portfolioImg,
+.containerOver:active .portfolioImg {
     opacity: 0.2;
 }
 
-.containerOver:hover .overlay {
+.containerOver:hover .overlay,
+.containerOver:active .overlay {
     opacity: 1;
 }
 
@@ -604,7 +604,8 @@ a {
     margin: 0;
 }
 
-#circle4 a:hover {
+#circle4 a:hover,
+#circle4 a:active {
     color: blue;
 }
 

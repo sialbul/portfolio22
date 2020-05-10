@@ -2,9 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 html {
@@ -14,6 +11,7 @@ html {
 body {
     background-color: #f3f1e9;
     overflow-x: hidden;
+    cursor: none;
 }
 
 header {
@@ -35,7 +33,6 @@ nav {
 }
 
 .home {
-    overflow: hidden;
     display: flex;
     width: 90%;
     margin: auto;
@@ -232,8 +229,7 @@ nav {
     border: 1px solid black;
 }
 
-.nav-links :hover,
-.nav-links :active {
+.nav-links :hover {
     color: red;
     transform: scale(2);
     transition: all 0.2s ease;
@@ -354,7 +350,6 @@ section {
 
 main {
     position: relative;
-    z-index: -3;
 }
 
 .bubble {
@@ -407,8 +402,7 @@ main {
     color: black;
 }
 
-#githubLeft:hover,
-#githubLeft:active {
+#githubLeft:hover {
     color: blue;
 }
 
@@ -463,15 +457,14 @@ main {
     transform: translate(-50%, -50%);
     text-align: center;
     align-items: center;
+    z-index: 5;
 }
 
-.containerOver:hover .portfolioImg,
-.containerOver:active .portfolioImg {
+.containerOver:hover .portfolioImg {
     opacity: 0.2;
 }
 
-.containerOver:hover .overlay,
-.containerOver:active .overlay {
+.containerOver:hover .overlay {
     opacity: 1;
 }
 
@@ -603,8 +596,7 @@ a {
     margin: 0;
 }
 
-#circle4 a:hover,
-#circle4 a:active {
+#circle4 a:hover {
     color: blue;
 }
 

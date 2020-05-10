@@ -108,7 +108,7 @@ nav {
 
 @media screen and (max-width:1280px) {
     #helper {
-        height: 70vh;
+        height: 90vh;
     }
     .circle {
         width: 60%;

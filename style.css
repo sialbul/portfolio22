@@ -15,7 +15,8 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0px;
     background-color: white;
     cursor: none;
@@ -150,7 +151,7 @@ nav {
         opacity: 0;
     }
     .home {
-        margin-top: 10vh;
+        margin-top: 15vh;
         display: block;
         text-align: center;
         width: 100%;

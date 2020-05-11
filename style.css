@@ -181,6 +181,12 @@ nav {
     #helper {
         height: 300vh;
     }
+    .home {
+        margin-top: 20vh;
+    }
+    svg {
+        width: 320px;
+    }
 }
 
 .nav-active {

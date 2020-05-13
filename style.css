@@ -103,6 +103,11 @@ nav {
     cursor: pointer;
 }
 
+svg {
+    width: 550px;
+    height: 357px;
+}
+
 @media screen and (max-width:1280px) {
     #helper {
         height: 90vh;
@@ -115,6 +120,15 @@ nav {
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 60%;
+    }
+    #helper {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width:830px) {
+    #helper {
+        height: 280vh;
     }
 }
 
@@ -170,10 +184,14 @@ nav {
         margin-top: 20vh;
     }
     #helper {
-        height: 250vh;
+        height: 270vh;
     }
     .bubble {
         display: none;
+    }
+    svg {
+        width: 350px;
+        height: 357px;
     }
 }
 

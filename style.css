@@ -415,11 +415,12 @@ main {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
-    grid-gap: 2em;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    width: 90vw;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
     /* position: relative; */
     height: 100vh;
 }

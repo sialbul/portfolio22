@@ -122,7 +122,7 @@ svg {
         width: 60%;
     }
     #helper {
-        height: 120vh;
+        height: 50vh;
     }
 }
 
@@ -184,7 +184,7 @@ svg {
         margin-top: 20vh;
     }
     #helper {
-        height: 270vh;
+        height: 200vh;
     }
     .bubble {
         display: none;
@@ -192,6 +192,9 @@ svg {
     svg {
         width: 350px;
         height: 357px;
+    }
+    .contact {
+        height: 20px;
     }
 }
 
@@ -413,7 +416,7 @@ main {
     }
 }
 
-.projects {
+.projectsCenter {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 1.5rem;
@@ -441,6 +444,7 @@ main {
     border-radius: 50%;
     position: absolute;
     margin: 0 20%;
+    z-index: -1;
 }
 
 .circle2 h1 {

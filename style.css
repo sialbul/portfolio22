@@ -191,6 +191,9 @@ nav {
     .contact {
         height: 20px;
     }
+    #email {
+        display: none;
+    }
 }
 
 @media screen and (max-width:320px) {

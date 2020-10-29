@@ -103,11 +103,6 @@ nav {
     cursor: pointer;
 }
 
-svg {
-    width: 550px;
-    height: 357px;
-}
-
 @media screen and (max-width:1280px) {
     #helper {
         height: 90vh;
@@ -464,7 +459,7 @@ main {
 }
 
 .container {
-    width: 80%;
+    width: 20rem;
     height: 30vh;
     border: 1px solid white;
     border-radius: 2%;
@@ -517,6 +512,11 @@ a {
 
 
 /*animation - svg*/
+
+svg {
+    width: 550px;
+    height: 357px;
+}
 
 #leftArm {
     animation: leftArm 1s ease-in-out infinite alternate;

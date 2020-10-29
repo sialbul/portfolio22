@@ -44,8 +44,6 @@ class UI {
     </div>
 </div>
 </div>
-
-
 `
         });
         projectsDOM.innerHTML = result;

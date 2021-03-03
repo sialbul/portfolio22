@@ -11,7 +11,7 @@
         {
             "id": "2",
             "img": "assets/estore.jpg",
-            "exp": "A full e-commerce store web site using React.js, Redux, Firebase, Express.js, Material-UI and Netlify.<br />",
+            "exp": "A full e-commerce store web site using React.js, Context API, Paypal and Netlify.<br />",
             "website": "https://estore-reactapp.netlify.app/",
             "github": "https://github.com/sialbul/e-store"
         },

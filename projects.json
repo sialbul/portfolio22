@@ -1,20 +1,20 @@
 {
-    "projects": [
+    "projects": [{
+            "id": "1",
+            "img": "assets/chagrin.png",
+            "exp": "Built a new responsive web site, including all design - logo design with animations.",
+            "website": "http://www.chagrinvalleyearlylearningcenter.com/",
+            "github": "https://github.com/sialbul/chagrinvalley"
+        },
 
         {
-            "id": "1",
+            "id": "2",
             "img": "assets/hotelWorx.jpg",
             "exp": "Hotel Worx is a property management system and is suitable for the management of all sizes and types of accommodation facilities. It is implemented using <br /> React.js, MySQL and Passport.",
             "website": "https://hotelworx.herokuapp.com/login",
             "github": "https://github.com/Vincent440/hotel-worx"
         },
-        {
-            "id": "2",
-            "img": "assets/estore.jpg",
-            "exp": "A full e-commerce store web site using React.js, Context API, Paypal and Netlify.<br />",
-            "website": "https://estore-reactapp.netlify.app/",
-            "github": "https://github.com/sialbul/e-store"
-        },
+
         {
             "id": "3",
             "img": "assets/googlebook.png",
@@ -45,17 +45,17 @@
         },
         {
             "id": "7",
-            "img": "assets/rps.jpg ",
-            "exp": "Rock Paper Scissors game is an online multiplayer game with the help of Firebase.<br />",
-            "website": "https://sialbul.github.io/RPS-Multiplayer/",
-            "github": "https://github.com/sialbul/RPS-Multiplayer"
-        },
-        {
-            "id": "8",
             "img": "assets/starwars.jpg",
             "exp": "Star Wars RPG game using <br />HTML5, CSS, Bootstrap and jQuery.<br />",
             "website": "https://sialbul.github.io/unit-4-game",
             "github": "https://github.com/sialbul/unit-4-game"
+        },
+        {
+            "id": "8",
+            "img": "assets/cityguide.jpg ",
+            "exp": "This application takes a city that the user enters and retrieves relevant data from multiple APIs to show information on the city entered.<br />",
+            "website": "https://kandrac.github.io/CityGuide/",
+            "github": "https://github.com/Kandrac/CityGuide"
         }
     ]
 }

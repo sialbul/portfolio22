@@ -1,30 +1,29 @@
-const projectsDOM = document.querySelector('.projectsCenter');
+const projectsDOM = document.querySelector(".projectsCenter");
 
 //getting projects
 class Projects {
     async getProjects() {
         try {
-            let result = await fetch('projects.json');
+            let result = await fetch("projects.json");
             let data = await result.json();
 
             let projectsAll = data.projects;
-            projectsAll = projectsAll.map(project => {
+            projectsAll = projectsAll.map((project) => {
                 const { id, img, exp, website, github } = project;
-                return { img, exp, website, github }
-            })
-            return projectsAll
+                return { img, exp, website, github };
+            });
+            return projectsAll;
         } catch (error) {
             console.log(error);
         }
     }
 }
 
-
 // display projects
 class UI {
     displayProjects(projects) {
-        let result = '';
-        projects.forEach(project => {
+        let result = "";
+        projects.forEach((project) => {
             result += `
             <div class="circle2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             </div>
@@ -34,7 +33,7 @@ class UI {
             <div class="overlay">
             <div class="text">
             <p id="exp"> ${project.exp}</p>
-            </br>
+            <br/>
             <a target="_blank" title="Visit Website" href=${project.website}>
                 <i id="githubLeft" class=" fa fa-globe "></i>
             </a>
@@ -44,9 +43,7 @@ class UI {
     </div>
 </div>
 </div>
-
-
-`
+`;
         });
         projectsDOM.innerHTML = result;
     }
@@ -56,10 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
     const projects = new Projects();
     //get all projects
-    projects.getProjects().then(projects => ui.displayProjects(projects));
-
+    projects.getProjects().then((projects) => ui.displayProjects(projects));
 });
-
 
 // $("nav").find("a").click(function(e) {
 //     e.preventDefault();
@@ -69,72 +64,71 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 // });
 
-$(document).ready(function() {
-
-    //navbar 
+$(document).ready(function () {
+    //navbar
     const navSlide = () => {
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        let navLinks = document.querySelectorAll('.nav-links li');
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector(".nav-links");
+        let navLinks = document.querySelectorAll(".nav-links li");
 
-        burger.addEventListener('click', () => {
+        burger.addEventListener("click", () => {
             //toogle nav
 
-            nav.classList.toggle('nav-active');
+            nav.classList.toggle("nav-active");
             //animate links
 
             navLinks.forEach((link, index) => {
                 if (link.style.animation) {
-                    link.style.animation = ''
+                    link.style.animation = "";
                 } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${
+                        index / 7 + 0.5
+                    }s`;
                 }
             });
             //burger animation
-            burger.classList.toggle('toggle');
-        })
-    }
+            burger.classList.toggle("toggle");
+        });
+    };
 
     navSlide();
 
-
     //animated mouse
-    let mouseCursor = document.querySelector('.newcursor');
-    let navLinks = document.querySelectorAll('.nav-links li');
+    let mouseCursor = document.querySelector(".newcursor");
+    let navLinks = document.querySelectorAll(".nav-links li");
 
+    let containers = document.querySelectorAll(".photoanimation img");
 
-    let containers = document.querySelectorAll('.photoanimation img');
-
-    window.addEventListener('mousemove', cursor);
+    window.addEventListener("mousemove", cursor);
 
     function cursor(e) {
         mouseCursor.style.top = e.pageY + "px";
         mouseCursor.style.left = e.pageX + "px";
     }
 
-    navLinks.forEach(link => {
-        link.addEventListener('mouseleave', () => {
-            mouseCursor.classList.remove('link-grow');
+    navLinks.forEach((link) => {
+        link.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("link-grow");
         });
-        link.addEventListener('mouseover', () => {
-            mouseCursor.classList.add('link-grow');
+        link.addEventListener("mouseover", () => {
+            mouseCursor.classList.add("link-grow");
         });
     });
 
-    containers.forEach(img => {
-        img.addEventListener('mouseleave', () => {
-            mouseCursor.classList.remove('link-grow');
+    containers.forEach((img) => {
+        img.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("link-grow");
         });
-        img.addEventListener('mouseover', () => {
-            mouseCursor.classList.add('link-grow');
-        })
-    })
+        img.addEventListener("mouseover", () => {
+            mouseCursor.classList.add("link-grow");
+        });
+    });
 
     //animated navbar
 
-    const sections = document.querySelectorAll('section');
-    const bubble = document.querySelector('.bubble');
-    const colors = ['#a3cf4d', "#a3cf4d", "#a3cf4d", "#a3cf4d"];
+    const sections = document.querySelectorAll("section");
+    const bubble = document.querySelector(".bubble");
+    const colors = ["#a3cf4d", "#a3cf4d", "#a3cf4d", "#a3cf4d"];
 
     const options = {
         threshold: 0.7
@@ -143,10 +137,12 @@ $(document).ready(function() {
     let observer = new IntersectionObserver(navCheck, options);
 
     function navCheck(entries) {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
             const className = entry.target.className;
-            const activeAnchor = document.querySelector(`[data-page=${className}]`);
-            const gradientIndex = entry.target.getAttribute('data-index');
+            const activeAnchor = document.querySelector(
+                `[data-page=${className}]`
+            );
+            const gradientIndex = entry.target.getAttribute("data-index");
             const coords = activeAnchor.getBoundingClientRect();
             const directions = {
                 height: coords.height,
@@ -161,16 +157,14 @@ $(document).ready(function() {
                 bubble.style.setProperty("height", `${directions.height}px`);
                 bubble.style.background = colors[gradientIndex];
             }
-
         });
     }
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
         observer.observe(section);
     });
 
     AOS.init();
-
 });
 
 //typing
@@ -192,5 +186,4 @@ let letter = "";
         index = 0;
     }
     setTimeout(type, 400);
-
-}());
+})();

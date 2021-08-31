@@ -103,11 +103,6 @@ nav {
     cursor: pointer;
 }
 
-svg {
-    width: 550px;
-    height: 357px;
-}
-
 @media screen and (max-width:1280px) {
     #helper {
         height: 90vh;
@@ -129,6 +124,13 @@ svg {
 @media screen and (max-width:830px) {
     #helper {
         height: 280vh;
+    }
+    #email {
+        display: none;
+    }
+    svg {
+        width: 300px;
+        height: 337px;
     }
 }
 
@@ -190,11 +192,14 @@ svg {
         display: none;
     }
     svg {
-        width: 350px;
-        height: 357px;
+        width: 300px;
+        height: 337px;
     }
     .contact {
         height: 20px;
+    }
+    #email {
+        display: none;
     }
 }
 
@@ -206,7 +211,10 @@ svg {
         margin-top: 20vh;
     }
     svg {
-        width: 320px;
+        width: 300px;
+    }
+    #email {
+        display: none;
     }
 }
 
@@ -357,7 +365,7 @@ section {
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-    animation: reveal 1s ease 0.5s forwards, swing 3s ease-in-out infinite alternate-reverse;
+    animation: reveal 0.1s ease 0.1s forwards, swing 3s ease-in-out infinite alternate-reverse;
     opacity: 0;
 }
 
@@ -464,7 +472,7 @@ main {
 }
 
 .container {
-    width: 80%;
+    width: 20rem;
     height: 30vh;
     border: 1px solid white;
     border-radius: 2%;
@@ -517,6 +525,11 @@ a {
 
 
 /*animation - svg*/
+
+svg {
+    width: 550px;
+    height: 357px;
+}
 
 #leftArm {
     animation: leftArm 1s ease-in-out infinite alternate;

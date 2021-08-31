@@ -44,14 +44,14 @@
             "github": "https://github.com/sialbul/burger"
         },
         {
-            "id": "8",
+            "id": "7",
             "img": "assets/starwars.jpg",
             "exp": "Star Wars RPG game using <br />HTML5, CSS, Bootstrap and jQuery.<br />",
             "website": "https://sialbul.github.io/unit-4-game",
             "github": "https://github.com/sialbul/unit-4-game"
         },
         {
-            "id": "9",
+            "id": "8",
             "img": "assets/cityguide.jpg ",
             "exp": "This application takes a city that the user enters and retrieves relevant data from multiple APIs to show information on the city entered.<br />",
             "website": "https://kandrac.github.io/CityGuide/",

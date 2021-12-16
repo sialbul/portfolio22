@@ -642,6 +642,13 @@ nav {
   display: block;
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 5vh;
+  font-size: 2.5vh;
+  font-family: "Quicksand", sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   .contact {
     height: 20px;
@@ -821,7 +828,8 @@ html {
 }
 
 body {
-  background-color: #f3f1e9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f1e9), color-stop(#efecdf), color-stop(#ebe7d4), color-stop(#e8e1ca), to(#e4dcc0));
+  background-image: linear-gradient(to bottom, #f3f1e9, #efecdf, #ebe7d4, #e8e1ca, #e4dcc0);
   overflow-x: hidden;
   cursor: none;
 }

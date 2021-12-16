@@ -1,0 +1,141 @@
+@import "_variables";
+@import "_header";
+@import "_aboutme";
+@import "_projects";
+@import "_contact";
+@import "_resumesection";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $lightwhite;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+main {
+  position: relative;
+}
+
+.newcursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid $black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 100;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 45%;
+  background-color: $yellowlight;
+  border-radius: 50%;
+  top: -5%;
+  left: -5%;
+  z-index: -1;
+  position: absolute;
+  transition: transform 0.2s;
+  &:after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+  }
+}
+.circle7 {
+  width: 10%;
+  background-color: $midyellow;
+  border-radius: 50%;
+  top: 10%;
+  left: 60%;
+  z-index: -3;
+  position: absolute;
+  transition: transform 0.2s;
+  &:after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+  }
+}
+
+.circle8 {
+  width: 5%;
+  background-color: $darkyellow;
+  border-radius: 50%;
+  top: -5%;
+  left: -5%;
+  z-index: -1;
+  position: absolute;
+  transition: transform 0.2s;
+  &:after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #helper {
+    height: 90vh;
+  }
+  .circle {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #helper {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  #helper {
+    height: 280vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    align-items: center;
+    text-align: center;
+  }
+
+  .circle {
+    margin-top: 20vh;
+  }
+  #helper {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #helper {
+    height: 300vh;
+  }
+}

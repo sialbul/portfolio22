@@ -56,14 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     projects.getProjects().then((projects) => ui.displayProjects(projects));
 });
 
-// $("nav").find("a").click(function(e) {
-//     e.preventDefault();
-//     var section = $(this).attr("href");
-//     $("html, body").animate({
-//         scrollTop: $(section).offset().top
-//     });
-// });
-
 $(document).ready(function () {
     //navbar
     const navSlide = () => {
@@ -81,14 +73,14 @@ $(document).ready(function () {
                 if (link.style.animation) {
                     link.style.animation = "";
                 } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${
-                        index / 7 + 0.5
-                    }s`;
+                    link.style.animation = `navLinkFade 0.8s ease forwards ${index / 7 + 0.5
+                        }s`;
                 }
             });
             //burger animation
             burger.classList.toggle("toggle");
         });
+
     };
 
     navSlide();

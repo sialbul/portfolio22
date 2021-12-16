@@ -1,0 +1,82 @@
+svg {
+  width: 550px;
+  height: 357px;
+}
+
+#leftArm {
+  animation: leftArm 1s ease-in-out infinite alternate;
+  transform-origin: top;
+}
+
+@keyframes leftArm {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(1.6%);
+  }
+}
+
+#rightArm {
+  animation: rightArm 2s ease-in-out infinite alternate;
+  transform-origin: top;
+}
+
+@keyframes rightArm {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(2%);
+  }
+}
+
+#leftHair {
+  animation: hair 2s ease-in-out infinite alternate;
+  transform-origin: top;
+}
+
+#rightHair {
+  animation: hairR 2s ease-in-out infinite alternate;
+  transform-origin: top;
+}
+
+@keyframes hair {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-0.8%);
+  }
+}
+
+@keyframes hairR {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-0.2%);
+  }
+}
+
+#ground {
+  animation: ground 2s ease-in-out infinite alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes ground {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(45deg);
+  }
+}
+
+@media screen and (max-width: 830px) {
+  svg {
+    width: 300px;
+    height: 337px;
+  }
+}

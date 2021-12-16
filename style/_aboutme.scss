@@ -1,0 +1,127 @@
+.home {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+.aboutme {
+  width: 100%;
+  z-index: 3;
+  letter-spacing: 3px;
+  text-align: center;
+  align-items: center;
+  line-height: 4vh;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+  animation: reveal 3s ease-in-out forwards;
+  color: $darkpurple;
+}
+
+.photoanimation {
+  position: relative;
+  margin: 0 auto;
+  border: 3px solid $lightgreen;
+  border-radius: 50%;
+  z-index: 5;
+  width: 45%;
+  margin-top: 10vh;
+  &:after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    animation: reveal 1s ease forwards,
+      swing 3s ease-in-out infinite alternate-reverse;
+    opacity: 0;
+  }
+  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: reveal 0.1s ease 0.1s forwards,
+      swing 3s ease-in-out infinite alternate-reverse;
+    opacity: 0;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+
+.typing {
+  position: relative;
+  margin-left: 2px;
+  color: white;
+  text-shadow: 2px 2px 2px $transblack;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 55%;
+    border-right: 2px solid $black;
+    animation: blink 0.5s infinite ease;
+    padding-top: 6px;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin-top: 15vh;
+    display: block;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .aboutme {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .photoanimation {
+    width: 60%;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home {
+    margin-top: 20vh;
+  }
+}

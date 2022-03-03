@@ -6,19 +6,14 @@ $(document).ready(function () {
                 <img src=" ./assets/sibel.png " alt=" sibel ">
                 <video autoplay muted loop src=" ./assets/forest.mp4 "></video>
             </div>
-            <div class=" aboutme ">
-                <p class=" aboutMeText ">Web designer, developer and Environmental Engineering graduate with a strong
-                    work ethic and enthusiasm for coding.</p>
+            <div class="aboutme">
+                <p class="aboutMeText">Web designer, developer and Environmental Engineering graduate.</p>
                 <br>
-                <p class=" aboutMeText ">Graduated from the Case Western Reserve University Full Stack Web Development
-                    program.
-                </p>
-                <br>
-                <p class=" aboutMeText ">Brings creativity, problem solving skills and a drive for collaboration to
+                <p class="aboutMeText">Brings creativity, problem solving skills and a drive for collaboration to
                     every project. </p>
                 <br>
-                <p class=" aboutMeText "> Specializes in</p>
-                <p class=" typing "></p>
+                <p class="aboutMeText"> Specializes in</p>
+                <p class="typing"></p>
             </div>
     
     `

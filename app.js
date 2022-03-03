@@ -160,7 +160,7 @@ $(document).ready(function () {
 });
 
 //typing
-const texts = ["HTML, CSS, JavaScript, React.Js!"];
+const texts = ["ASP.NET Web API, C#/.NET, JavaScript, React.Js, Vue.Js"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -177,5 +177,5 @@ let letter = "";
         count++;
         index = 0;
     }
-    setTimeout(type, 400);
+    setTimeout(type, 200);
 })();
